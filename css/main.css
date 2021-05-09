@@ -1,0 +1,263 @@
+@import 'fonts.css';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+/* header */
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 672px;
+    background: #eee9e9 url('../images/header-bg2_02.jpg') no-repeat center;
+    background-size: cover;
+   
+}
+
+.header__conteiner {
+    max-width: 1140px;
+    min-height: 672px;
+    margin: 0 auto;
+    padding:0 15px;
+   /*  border: 1px solid black; */
+}
+
+.header__menu,
+.header__text,
+.footer__menu {
+    width: 100%;
+    min-height: 84px;
+    /* border: 1px solid red; */
+}
+
+.header__text {
+    margin: 185px 0;
+}
+ /* menu */
+.header__menu,
+.footer__menu {
+  display:flex;
+  justify-content: space-between;
+}
+
+.header__menu--list,
+.footer__menu--list {
+    display: flex;
+}
+
+.header__menu--list a {
+  padding: 19px 24px 25px 28px;
+  font-size: 18px;
+  line-height: 13px;
+  font-family: 'arial-b';
+  font-weight: 700;
+  color: #4d4d4d;
+  display: flex;
+}
+
+.header__menu--list a:hover {
+    background: #c1bc45;
+    color:white;
+}
+
+.header__menu--logo,
+.footer__menu--logo {
+    padding: 10px 0 0 17px;
+    display: flex;
+}
+
+/* header__tex */
+
+.header__text h1 {
+    font-size: 100px;
+    font-family: 'arial-b';
+    font-weight: 700;
+    color: #c1bc45;
+}
+
+.header__text p {
+    font-size: 18px;
+    font-family: 'arial-r';
+    font-weight: 400;
+    color: #4d4d4d;
+}
+
+.header__text  strong {
+    font-family: 'arial-bl';
+    font-weight: 900;
+    color: black;
+}
+    
+/* section */
+
+.section {
+    width: 100%;
+    padding: 88px 0 109px 0;
+    background: #ffffff;
+}
+
+.section__container {
+    width: 1140px;
+    min-height: 300px;
+    padding: 0 15px;
+    /* border: 1px solid red; */
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__info,
+.section__list {
+   width: 47%;
+   min-height: 300px;
+   /* border: 1px solid red; */
+}
+
+.section__info img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.section__info h3 {
+    font-size: 20px;
+    font-family: 'arial-b';
+    font-weight: 700;
+    color: black;
+    padding: 17px 0;
+}
+
+.section__info p {
+    font-size: 15.6px;
+    line-height: 26px;
+    font-family: 'arial-r';
+    font-weight: 400;
+    color: #333333;
+}
+
+.item {
+    width: 100%;
+    padding: 13px 6px 13px 23px;
+    border: 4px solid #aeaeae;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.item__pic {
+    width: 125px;
+    min-height: 125px;
+    border: 6px solid #f0efb6;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.item__pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item__text {
+    width: 340px;
+}
+
+.item__text h3 {
+    font-size: 16px;
+    font-family: 'arial-b';
+    font-weight: 700;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.item__text p {
+    font-size: 16px ;
+    font-family: 'arial-r';
+    font-weight: 400;
+    line-height: 24px;
+    color: #919191;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+
+}
+
+.item:hover {
+    border-color: #f0efb6;
+}
+
+/* selection-end */
+
+/* footer */
+
+.footer {
+width: 100%;
+padding: 104px 0 33px 0;
+background: #eee9e9;
+}
+
+.footer__container {
+    width: 1140px;
+    min-height: 200px;
+    margin:0 auto;
+    padding:0 15px;
+    /* border: 1px solid black; */
+}
+
+.footer__menu--list a {
+    padding: 25px 0 18px 0;
+    margin: 0 26px;
+    font-size: 18px;
+    line-height: 13px;
+    font-family: 'arial-b';
+    font-weight: 700;
+    color: #4d4d4d;
+    display: flex;
+}
+
+.footer__menu--list a:hover {
+  color:#bc3333;
+  border-bottom: 4px solid red;
+}
+
+.footer__text {
+    widows: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'arial-b';
+    font-weight: 700;
+    color:#5a5a5a;
+    margin-top: 60px;
+}
+
+/* footer-end */
+
+/* Media */
+
+@media (max-width: 1200px) {
+  .header {
+      width: 100%;
+  }
+  .header__container {
+      width: 100%;
+  }
+}
+@media (max-width: 992px)  {
+   
+}
+@media (max-width: 768px)  {}
+@media (max-width: 576px)  {}
+@media (max-width: 480px)  {}
+@media (max-width: 320px)  {}
